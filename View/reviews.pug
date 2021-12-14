@@ -1,0 +1,14 @@
+extends base.pug
+block content
+ .review
+  h1 REVIEWS
+  each review in reviews
+   include reviewCard.pug
+ .linear
+  if(user!="admin")
+   input.btno(type='button' value='Write A Review' onclick="window.location='/writereview'")
+ block scripts
+  script(src="./js/review.js")
+
+
+   

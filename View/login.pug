@@ -1,0 +1,20 @@
+extends base.pug
+block content
+ .login-box
+  h1 LOGIN
+  .textbox
+   i.fas.fa-envelope-open-text
+   input#em(type='email' placeholder='Email Address')
+  .textbox
+   i.fas.fa-lock
+   input#pwd(type='password' placeholder='Password')
+  
+  .message 
+  input.btn.sub(type='button' value='Sign in')
+  .linko
+   |New here ? 
+   a(href='/signup') Create Account
+ block scripts
+  script(src="./js/login.js") 
+   
+  

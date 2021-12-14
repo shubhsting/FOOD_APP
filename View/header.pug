@@ -1,0 +1,19 @@
+link(rel="stylesheet" , href="./css/header.css")
+.navbar
+  ul.nav
+    li
+      a(href='#home') Features
+    li
+      a(href='#about') Details
+    li
+      a(href='/plans') Plans
+    if(name)
+      li
+        a(href='/profile') #{name}
+      li
+        a(href='/logout') logout
+    else
+      li
+        a(href='/reviews') Reviews
+      li
+        a(href='/login') Login

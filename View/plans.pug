@@ -1,0 +1,9 @@
+extends base.pug
+block content
+ .snip1214
+  each plan in plans
+   include planCard.pug
+ .linear
+  if role=="admin"
+   input.btno(type='button' value='Update Plan')
+ 

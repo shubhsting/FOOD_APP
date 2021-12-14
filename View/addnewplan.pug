@@ -1,0 +1,18 @@
+extends base.pug
+block content
+ .login-box
+  h1 ADD PLAN
+  .textbox
+    input#pname(type='text' placeholder='Plan Name')
+  .textbox
+    input#dur(type='text' placeholder='Duration')
+  .textbox
+    input#price(type='text' placeholder='Price')
+  .textbox
+    input#rating(type='text' placeholder='Ratings')
+  .textbox
+    input#discount(type='text' placeholder='Discount')
+  .message
+  input.btn.sub(type='button' value='Add Plan')
+ block scripts
+  script(src="./js/newplan.js")

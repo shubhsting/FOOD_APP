@@ -1,0 +1,14 @@
+extends base.pug
+block content
+ .login-box
+  h1 ADD REVIEW
+  .textbox
+    input#name(type='text' placeholder='Your Name')
+  .textbox
+    input#date(type='text' placeholder='Date')
+  .textbox
+   textarea#review(name="", cols="30", rows="10" placeholder="Write Your Review here...")
+  .message
+  input.btn.sub(type='button' value='Submit Review')
+ block scripts
+  script(src="./js/newplan.js")

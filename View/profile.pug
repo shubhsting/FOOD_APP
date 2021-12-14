@@ -1,0 +1,36 @@
+extends base.pug
+block content
+ body
+  link(rel="stylesheet" , href="./css/profile.css")
+  .wrapper
+   .left
+    img(src='https://i.imgur.com/cMy8V5j.png' alt='user' width='100')
+    h4 #{user.name}
+    p #{user.role}
+   .right
+    .info
+     h3 Information
+     .info_data
+      .data
+       h4 Email
+       p(contenteditable='true') #{user.email} 
+      .data
+       h4 Phone
+       p 0001-213-998761
+    .projects
+     h3 Projects
+     .projects_data
+      .data
+       h4 Recent
+       p Lorem ipsum dolor sit amet.
+      .data
+       h4 Most Viewed
+       p dolor sit amet.
+ .linear
+   if user.role=="admin"
+    input.btno(type='button' value='Get All Users' onclick="window.location='/users'")
+    input.btno(type='button' value='Approve Reviews' onclick="window.location='/reviews'")
+    input.btno(type='button' value='Add a new Plan' onclick="window.location='/addnewPlan'")
+  
+      
+   

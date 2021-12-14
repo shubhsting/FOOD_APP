@@ -1,0 +1,329 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(41, 41, 41, 0.596), rgb(0, 0, 0)), url("../images/backo.jpg");
+  /* height: 100vh; */
+  background-size: 100vw;
+  background-attachment: fixed;
+
+}
+
+.message {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  width: 280px;
+  position: relative;
+  top: 50%;
+  left: 42%;
+  margin-top: 70px;
+}
+
+.login-box h1 {
+  color: white;
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.textbox:hover {
+  border-bottom: 4px solid #4caf50;
+}
+
+.textbox i {
+  color: white;
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+textarea  {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  float: left;
+  margin: 0 10px;
+}
+
+.textbox select {
+  border: none;
+  outline: none;
+  background: none;
+  color: #4caf50;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+.sub {
+  width: 100%;
+  background: none;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  border: 4px solid #4caf50;
+}
+
+.login-box h3 {
+  float: left;
+  color: white;
+  font-size: 25px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== */
+
+section {
+  padding: 4rem 5rem;
+}
+
+.container-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* width:100%; */
+}
+
+.op {
+  margin-bottom: 3rem;
+  padding: 2rem 1.5rem;
+  margin-right: 1.5rem;
+  box-shadow: 0 1px 2px 1px white;
+  width: 30%;
+  transition: transform 0.4s;
+  color: white;
+  border-radius: 20px;
+}
+
+.step-container.clear-fix:hover,
+.op:hover {
+  transform: scale(1.05);
+}
+
+.How-to h2,
+.features h2 {
+  font-size: 225%;
+  text-align: center;
+  /* font-weight: 300; */
+  text-transform: uppercase;
+  color: white;
+}
+
+.linko a {
+  text-decoration: none;
+  color: #4caf50;
+  margin-left: 4px;
+}
+
+.heading-para {
+  font-size: 130%;
+  padding: 0 8rem;
+  margin-bottom: 2rem;
+}
+
+.linko {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.op h2::after {
+  content: "";
+  color: #f63854;
+  display: block;
+  border-bottom: solid;
+  margin: 2rem 31rem;
+  margin-bottom: 3rem;
+}
+
+.op h3 {
+  /* font-weight: 300; */
+  font-size: 125%;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.feature-para {
+  line-height: 145%;
+
+}
+
+.op i {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+.How-to {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  box-shadow: 2px 2px 2px 2px white;
+  transition: transform 0.4s;
+  color: white;
+  border-radius: 20px;
+}
+
+.howto-container {
+  display: flex;
+
+}
+
+.howto-container i {
+  color: #4caf50;
+  width: 17%;
+  margin: 90px 11%;
+  font-size: 140px;
+}
+
+.step-container {
+  position: relative;
+  top: 3rem;
+  left: 2rem;
+}
+
+.step-container div {
+  color: #4caf50;
+  height: 4rem;
+  width: 4rem;
+  border-color: #4caf50;
+  text-align: center;
+  padding-top: 0.7rem;
+  border-radius: 50%;
+  border-style: solid;
+  font-size: 180%;
+  margin-bottom: 2rem;
+
+}
+
+.howto-para {
+  position: relative;
+  top: 0.7rem;
+  left: 1rem;
+  /* margin-top: 1.5rem; */
+}
+
+.step-val {
+  float: left;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.smallreview {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: white;
+  /* position: relative; */
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.contentofreview {
+  width: fit-content;
+
+  height: fit-content;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: -webkit-center;
+}
+
+.bottomofreview {
+  display: flex;
+
+  width: 100%;
+  height: 30px;
+  justify-content: space-around;
+}
+
+.nameofreview {
+  height: 100%;
+  width: 100px;
+  text-transform: uppercase;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.dateofreview {
+  height: 100%;
+  width: 100px;
+  text-transform: uppercase;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.review h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
