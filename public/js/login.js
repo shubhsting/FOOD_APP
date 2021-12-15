@@ -6,7 +6,7 @@ button.addEventListener("click", function (e) {
     e.preventDefault();
     if (email.value && password.value) {
         console.log(password.value);
-        axios.post("http://localhost:3000/api/user/login", { email: email.value, password: password.value }).then((obj) => {
+        axios.post("https://kajalrestaurant.herokuapp.com/api/user/login", { email: email.value, password: password.value }).then((obj) => {
             console.log(obj.data.message);
             if (obj.data.data) {
                 window.location.href = "/";

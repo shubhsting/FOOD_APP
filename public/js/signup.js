@@ -5,6 +5,7 @@ const password = document.querySelector("#pass");
 const cpassword = document.querySelector("#cpass");
 const role = document.querySelector("#role");
 const button = document.querySelector(".sub");
+let odiv = document.querySelector(".message");
 
 button.addEventListener("click", function (e) {
     e.preventDefault();
@@ -18,8 +19,12 @@ button.addEventListener("click", function (e) {
             "password": password.value,
             "confirmPassword": cpassword.value
         }
-        axios.post("http://localhost:3000/api/user/signup", signUpObj).then((obj) => {
-            console.log(obj)
+        axios.post("https://kajalrestaurant.herokuapp.com/api/user/signup", signUpObj).then((obj) => {
+            if (obj.data.data) {
+                window.location.href = "/login";
+            } else {
+                odiv.innerHTML = obj.data.message
+            }
         })
             .catch((error) => {
                 console.log(error)

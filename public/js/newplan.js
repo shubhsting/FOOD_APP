@@ -15,7 +15,7 @@ submit.addEventListener("click", function (e) {
             "ratings": rating.value,
             "discount": discount.value
         }
-        axios.post("http://localhost:3000/api/plans", signUpObj).then((obj) => {
+        axios.post("https://kajalrestaurant.herokuapp.com/api/plans", signUpObj).then((obj) => {
             message.innerHTML = obj.data.message;
         })
             .catch((error) => {

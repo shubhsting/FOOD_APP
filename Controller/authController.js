@@ -149,7 +149,7 @@ async function forgotPassword(req, res, next) {
             let token = user.createPwToken();
             let update = await user.save({ validateBeforeSave: false })
 
-            let resetLink = `http://localhost:3000/user/resetPassword/${token}`
+            let resetLink = `https://kajalrestaurant.herokuapp.com/user/resetPassword/${token}`
             res.json({
                 message: "Token set Succcessfully and link send!!!!",
                 data: resetLink
