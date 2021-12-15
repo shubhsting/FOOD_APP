@@ -4,11 +4,11 @@ link(rel="stylesheet" , href="./css/plan.css")
     | #{plan.name}
   .plan-cost
     span.plan-price ₹#{plan.price}
-    span.plan-type / Monthly
+    span.plan-type / Yearly
   ul.plan-features
     li
       i.ion-checkmark  
-      | That's only #{Math.ceil(plan.price/(plan.duration))} $ per month
+      | That's only #{Math.ceil(plan.price/(plan.duration))} ₹ per month
     li
       i.ion-checkmark  
       | 1 Meal Every Day
