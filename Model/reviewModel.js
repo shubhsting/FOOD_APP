@@ -25,7 +25,8 @@ let reviewSchema = new mongoose.Schema({
         required: true
     },
     approved: {
-        type: Boolean
+        type: Boolean,
+        default: false
     }
 })
 
